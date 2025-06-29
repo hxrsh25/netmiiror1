@@ -4,8 +4,8 @@ document.getElementById('login-form').addEventListener('submit', function(e) {
   const pass = document.getElementById('password').value;
 
   if (user === 'random.people' && pass === '1234') {
-    window.location.href = '/';
+    window.location.href = 'index.html';
   } else {
-    document.getElementById('login-error').textContent = 'Invalid credentials.';
+    document.getElementById('login-error').textContent = 'Invalid username or password.';
   }
 });
