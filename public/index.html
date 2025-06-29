@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Netmirror</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Netmirror</h1>
+    <nav>
+      <button onclick="loadGenre('All')">All</button>
+      <button onclick="loadGenre('Action')">Action</button>
+      <button onclick="loadGenre('Comedy')">Comedy</button>
+      <button onclick="loadGenre('Documentary')">Documentary</button>
+    </nav>
+  </header>
+
+  <main id="movies-container"></main>
+
+  <div id="trailer-modal" class="hidden">
+    <div class="modal-content">
+      <span id="close-btn">×</span>
+      <h2 id="trailer-title"></h2>
+      <iframe id="trailer-frame" width="100%" height="400" frameborder="0" allowfullscreen></iframe>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
